@@ -4,15 +4,20 @@
         <title>coupons</title>
         <style>
             #coupons{
-                width:160px;
-                height:80px;
+                width:260px;
+                height:90px;
+
+                margin-top:10px;
             }
             .coupons{
+                /* 定位 */
                 position: relative;
                 
+                /* 宽高 */
                 width:100%;
                 height:100%;
 
+                /* 边框弧度 */
                 border-radius: 5px;
 
                 /* 凹槽 */
@@ -25,13 +30,48 @@
                 /* 阴影 */
                 /* https://www.zhangxinxu.com/wordpress/2016/05/css3-filter-drop-shadow-vs-box-shadow/ */
                 filter: drop-shadow(1px 1px 2px #ffd29e);
+
+                /* 布局 */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+
+                /* 文字 */
+                font-size:15px;
+                color:#8a5728;
+            }
+            .coupons::before{
+                content:'';
+
+                position: absolute;
+                top:0;
+                left:0;
+
+                /* 62 × 47 */
+                width: 13%;
+                background:url("./tie.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding-bottom: 9.86%;
             }
         </style>
     </head>
     
     <body>
         <div id="coupons">
-            <div class="coupons"></div>
+            <div class="coupons">
+                <span style="color:#bb4052;font-weight:bold;">一重礼：</span>
+                分享立得
+                <span style="color:#df3c38;font-weight:bold;font-size:30px;">20</span>元话费
+            </div>
+        </div>
+        <div id="coupons">
+            <div class="coupons">
+                <span style="color:#bb4052;font-weight:bold;">二重礼：</span>
+                邀请成功再得
+                <span style="color:#df3c38;font-weight:bold;font-size:30px;">8</span>元话费
+            </div>
         </div>
     </body>
 </html>
