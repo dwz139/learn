@@ -1,4 +1,4 @@
 # learn
-structure programing
+structure thinking and programing
 
 # coupons pure css
